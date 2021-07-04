@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BestShop</title>
+    <link rel="icon" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="initial-scale=1">
+</head>
+
+<body>
+<header>
+    <section class="menu">
+        <div class="header_container">
+            <a href="#">BestShop</a>
+            <nav>
+                <input type="checkbox" class="menu_btn" id="menu_btn">
+                <label for="menu_btn" class="menu_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav">
+                    <li class="nav_element"><a href="#" class="nav_link">Why us</a></li>
+                    <li class="nav_element"><a href="#" class="nav_link">Benefits</a></li>
+                    <li class="nav_element"><a href="#" class="nav_link">Prices</a></li>
+                    <li class="nav_element"><a href="#" class="nav_link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div class="head">
+        <h1>Sell More!</h1>
+        <p>Open shop on our platform and increase your sales</p>
+        <a href="#">Open your shop</a>
+        <img src="assets/Background.png" alt="office desk">
+    </div>
+</header>
+
+<section class="statistics">
+    <h2>The most popular sales platform in country</h2>
+    <div class="container_stat">
+        <div class="stat_info">
+           <div class="circle1">
+               <img src="assets/Person.svg" alt="Person">
+           </div>
+            <h3>100000+</h3>
+            <p>daily entries</p>
+        </div>
+        <div class="stat_info">
+            <div class="circle2">
+                <img src="assets/Eye.svg" alt="Eye">
+            </div>
+            <h3>2000000+</h3>
+            <p>seen products every day</p>
+        </div>
+        <div class="stat_info">
+           <div class="circle3">
+               <img src="assets/Catalog.svg" alt="Catalog">
+           </div>
+            <h3>10000+</h3>
+            <p>added posts daily</p>
+        </div>
+    </div>
+</section>
+
+<section class="benefits">
+    <div class="container_benefits">
+        <div class="info first">
+            <h1>Be always first</h1>
+            <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam.</p>
+        </div>
+        <div class="screen1">
+            <img class="laptop" src="assets/Macbook.png" alt="macbook">
+        </div>
+    </div>
+    <div class="container_benefits">
+        <div class="screen2">
+            <img class="iphone" src="assets/iPhone.png" alt="iphone">
+        </div>
+        <div class="info second">
+            <h1>Your shop is where you are!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam.</p>
+        </div>
+    </div>
+    <div class="container_benefits last">
+        <div class="info third">
+            <h1>Increase recognition your brand!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="screen3">
+            <img class="trumpet" src="assets/Trumpet.png" alt="Trumpet">
+        </div>
+    </div>
+</section>
+
+<section class="pricing">
+    <h1>Pricing</h1>
+    <div class="all_offers">
+        <div class="container_offer basic">
+            <div class="price">
+                <h2>Basic</h2>
+                <h3>$0</h3>
+            </div>
+            <ul>
+                <li>100 MB HDD</li>
+                <li>1 Subdomain</li>
+                <li>2 E-mails</li>
+                <li class="unchecked">Two years license</li>
+                <li class="unchecked">Full support</li>
+            </ul>
+            <a href="#">Begin</a>
+        </div>
+        <div class="container_offer professional">
+            <div class="price">
+                <h2>Professional</h2>
+                <h3>$25</h3>
+                <p>Limited offer</p>
+            </div>
+            <ul>
+                <li>500 MB HDD</li>
+                <li>2 Subdomain</li>
+                <li>5 E-mails</li>
+                <li>One years license</li>
+                <li class="unchecked">Full support</li>
+            </ul>
+        <a href="#">Begin</a>
+        </div>
+            <div class="container_offer premium">
+                <div class="price">
+                    <h2>Premium</h2>
+                    <h3>$60</h3>
+                    <p>Limited offer</p>
+                </div>
+            <ul>
+                <li>2 GB HDD</li>
+                <li>5 Subdomain</li>
+                <li>20 E-mails</li>
+                <li>Two years license</li>
+                <li>Full support</li>
+            </ul>
+            <a href="#">Begin</a>
+        </div>
+    </div>
+</section>
+
+<section class ="calc">
+    <h2>Calculate how much you’ll pay</h2>
+    <div class="calc__container">
+        <form>
+            <input type="number" class="calc__input" id="products" placeholder="Products quantity">
+            <input type="number" class="calc__input" id="orders" placeholder="Estimated orders in month">
+            <div class="select__input" id="package">
+                Choose package
+            </div>
+
+            <ul class="select__dropdown">
+                <li>Basic</li>
+                <li>Professional</li>
+                <li>Premium</li>
+            </ul>
+
+            <label class="checkbox__calc">
+                <input type="checkbox" id="accounting"/>
+                <span class="checkbox"></span>
+                <p class="consent__text">Accounting</p>
+            </label>
+            <label class="checkbox__calc">
+                <input type="checkbox" id="terminal"/>
+                <span class="checkbox"></span>
+                <p class="consent__text">Rental of a payment terminal</p>
+            </label>
+        </form>
+
+        <div class="calc__summary">
+            <ul>
+                <li class="list__item" data-id="products">
+                    <span class="item__type">Products</span>
+                    <span class="item__calc">20 * $0.5</span>
+                    <span class="dollar">$<span class="item__price">0</span></span>
+                </li>
+                <li class="list__item" data-id="orders">
+                    <span class="item__type">Orders</span>
+                    <span class="item__calc">20 * $0.5</span>
+                    <span class="dollar">$<span class="item__price">0</span></span>
+                </li>
+                <li class="list__item" data-id="package">
+                    <span class="item__type">Package</span>
+                    <span class="item__calc">Premium</span>
+                    <span class="dollar">$<span class="item__price">0</span></span>
+                </li>
+                <li class="list__item" data-id="accounting">
+                    <span class="item__type">Accounting</span>
+                    <span class="dollar">$<span class="item__price">0</span></span>
+                </li>
+                <li class="list__item" data-id="terminal">
+                    <span class="item__type">Terminal</span>
+                    <span class="dollar">$<span class="item__price">0</span></span>
+                </li>
+            </ul>
+            <div class="summary__total" id="total-price">
+                <span>Total</span>
+                <span class="dollar">$<span class="total__price">700</span></span>
+             </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container_contact">
+        <div class="contact_data">
+            <h1>Any questions?</h1>
+            <p>Leave your email address or call us!</p>
+            <div class="email_phone-number">
+                <a href="#">
+                    <img src="assets/Mail%20Icon.svg" alt="mail">
+                    info@bestshop.xyz
+                </a>
+                <a href="#">
+                    <img src="assets/Phone%20Icon.svg" alt="phone">
+                    123 456 789
+                </a>
+            </div>
+        </div>
+        <form>
+            <label class="name" for="name">Name</label>
+            <input type="text" id="name">
+            <label class="email" for="email">email</label>
+            <input type="text" id="email">
+            <label class="checkbox">
+                <input type="checkbox" name="agreement" value="1">
+                <span></span>
+                I hereby give consent for my personal data included in my application
+                to be processed for the purposes of the recruitment process under the
+                European Parliament’s and Council of the European Union Regulation on
+                the Protection of Natural Persons as of 27 April 2016, with regard to
+                the processing of personal data and on the free movement of such data,
+                and repealing Directive 95/46/EC (Data Protection Directive)
+            </label>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <section class="end_page">
+        <div class="logo">
+            <h1>BestShop</h1>
+            <p>&copy 2019 BestShop LTD, All Rights Reserved</p>
+        </div>
+        <div class="links">
+            <a href="#"><img src="assets/Twitter.svg" alt="twitter"></a>
+            <a href="#"><img src="assets/Facebook.svg" alt="facebook"></a>
+        </div>
+    </section>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
