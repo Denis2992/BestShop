@@ -1,0 +1,231 @@
+@import "../settings/variables";
+@import "../settings/mixins";
+
+.benefits {
+  background-color: $color-light-grey;
+  width: 100%;
+  padding: 100px 0;
+
+  @include tablet {
+    padding: 50px 0;
+  }
+}
+
+.container_benefits {
+  max-width: 1124px;
+  max-height: 370px;
+  background-color: $color-white;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  &:nth-child(2) {
+    margin: 37px auto;
+
+    @include tablet {
+      margin: 30px 30px;
+    }
+  }
+
+  @include tablet {
+    flex-direction: column;
+
+    &:first-child {
+      flex-direction: column-reverse ;
+    }
+
+    padding: 50px 0;
+    margin: 0 30px;
+  }
+
+
+}
+
+  .last {
+    background-color: $color-light-grey;
+    border: none;
+
+    @include tablet {
+      padding-top: 40px;
+    }
+  }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+
+  h1 {
+    font-family: $font_raleway;
+    font-size: 36px;
+    line-height: 42px;
+    color: $color-black;
+
+    @include tablet {
+      font-size: 30px;
+      line-height: 35px;
+      padding-top: 20px;
+    }
+
+  }
+
+  p {
+    font-family: $font_opensans;
+    line-height: 22px;
+    color: $color-black;
+    padding-top: 30px;
+
+  }
+
+  .first {
+
+  }
+    &::after {
+      content: "";
+      width: 75%;
+      height: 4px;
+      background-color: #FB3B64;
+      margin-top: 50px;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+
+  .second {
+    padding: 0 20px;
+
+    h1 {
+      width: 250px;
+    }
+
+    &::after {
+      content: "";
+      height: 4px;
+      width: 75%;
+      background-color: $color-primary;
+      margin-top: 50px;
+    }
+  }
+
+  .third {
+    background-color: $color-white;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+
+
+    &::after {
+      content: "";
+      width: 60%;
+      height: 4px;
+      background-color: $color-green;
+      margin-top: 50px;
+    }
+
+    h1 {
+      max-width: 350px;
+    }
+  }
+
+.screen1 {
+  text-align: center;
+  &::before {
+    content: "";
+    height: 180px;
+    width: 180px;
+    background-color: $color-redish;
+    transform:matrix(0.71,0.71,-0.71,0.71,320,50);
+    border-radius: 40px;
+    position: absolute;
+
+    @include tablet {
+      height: 90px;
+      width: 90px;
+      transform:matrix(0.71,0.71,-0.71,0.71,120,-15);
+    }
+  }
+
+  .laptop {
+    height: 220px;
+    width: auto;
+    position: relative;
+    margin: 100px 120px 38px 100px;
+
+    @include tablet {
+      height: 110px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.screen2 {
+  text-align: center;
+
+  &::before {
+    content: "";
+    height: 320px;
+    width: 320px;
+    background-color: #07ACE6;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(80px, 10px);
+
+    @include tablet {
+      width: 160px;
+      height: 160px;
+      transform: translate(5px, -15px);
+    }
+  }
+
+  .iphone {
+    height: 320px;
+    width: auto;
+    position: relative;
+    margin: 35px 190px 15px 70px;
+
+    @include tablet {
+      height: 160px;
+      margin: 0;
+    }
+  }
+}
+
+.screen3 {
+  min-width: 440px;
+  height: 370px;
+  background-color: $color-green;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  flex-grow: 0;
+
+  @include tablet {
+    margin: 0;
+    min-width: 100px;
+  }
+
+  .trumpet {
+    max-width: 300px;
+    height: auto;
+    
+    @include tablet {
+      margin-top: 50px;
+      max-width: 250px;
+    }
+
+    @include mobile {
+      max-width: 200px;
+    }
+  }
+}
+
+
+

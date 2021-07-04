@@ -1,0 +1,31 @@
+.checkbox, .checkbox__calc {
+  cursor: pointer;
+  display: flex;
+  font-family: $font_opensans;
+  font-size: 12px;
+  line-height: 17px;
+  color: #707070;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked + span {
+      background-image: url("../../assets/Checkmark.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  span {
+    height: 25px;
+    flex-shrink: 0;
+    flex-basis: 25px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

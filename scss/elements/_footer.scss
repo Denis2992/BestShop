@@ -1,0 +1,41 @@
+@import "../settings/mixins";
+@import "../settings/variables";
+
+footer {
+  background-color: $color-light-grey;
+  box-shadow: 0 -5px 40px #00000029;
+  margin-top: 50px;
+  padding: 0 20px;
+
+  .end_page {
+    max-width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .logo {
+
+    h1 {
+      font-family: $font_raleway;
+      font-weight: lighter;
+      font-size: 26px;
+      line-height: 30px;
+      color: $color-primary;
+      padding-top: 20px;
+    }
+
+    p {
+      font-family: $font_opensans;
+      font-size: 11px;
+      line-height: 15px;
+      color: $color-grey;
+      padding: 7px 0 17px 0;
+    }
+
+    a {
+      padding-right: 20px;
+    }
+  }
+}

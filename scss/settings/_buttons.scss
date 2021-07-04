@@ -1,0 +1,12 @@
+@mixin buttons {
+  text-decoration: none;
+  font-family: $font_opensans;
+  font-weight: bold;
+  line-height: 22px;
+  color: $color-white;
+  padding: 22px 157px;
+  background-color: $color-primary;
+  border-radius: 40px;
+  box-shadow: 5px 10px 14px #07ACE629;
+  cursor: pointer;
+}

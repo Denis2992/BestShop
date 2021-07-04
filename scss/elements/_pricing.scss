@@ -1,0 +1,227 @@
+@import "../settings/buttons";
+@import "../settings/mixins";
+@import "../settings/variables";
+
+.pricing {
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+
+
+  @include tablet {
+    padding-top: 50px;
+  }
+
+  h1 {
+    font-family: $font_raleway;
+    font-size: 36px;
+    line-height: 1.5em;
+    padding-bottom: 50px;
+  }
+}
+
+.all_offers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1250px;
+
+  @include notebook {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+
+    margin: 0 20px;
+  }
+}
+
+.container_offer {
+  background-color: $color-white;
+  border-radius: 18px;
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  h2 {
+    font-family: $font_raleway;
+    font-size: 20px;
+    font-weight: bold;
+    color: #13253B;
+    padding: 35px 0 15px 0;
+
+  }
+
+  h3 {
+    font-family: $font_opensans;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 2px;
+    padding: 30px 0;
+
+    @include tablet {
+      padding: 15px 0;
+    }
+  }
+
+  p {
+    font-family: $font_raleway;
+    font-weight: bold;
+    font-size: 12px;
+    color: #13253B;
+  }
+
+  ul {
+
+    @include tablet {
+      padding-top: 50px;
+    }
+
+    li {
+      font-family: $font_opensans;
+      font-size: 14px;
+      line-height: 41px;
+      color: $color-black;
+
+      @include tablet {
+        text-align: left;
+      }
+
+      &:last-child {
+        padding-bottom: 75px;
+      }
+
+      &::before {
+        content: url("../../assets/Ckechmark-1.svg");
+        padding-right: 10px;
+      }
+    }
+  }
+
+    .unchecked::before {
+      content: url("../../assets/Close.svg");
+    }
+
+    a {
+      text-decoration: none;
+      font-family: $font_opensans;
+      font-weight: bold;
+      font-size: 13px;
+      color: $color-white;
+      padding: 15px 55px;
+      border-radius: 23px;
+      position: absolute;
+    }
+  }
+
+
+.basic {
+  border: 1px solid $color-redish;
+  max-height: 460px;
+  width: 370px;
+
+  @include tablet {
+    height: 250px;
+    width: 300px;
+  }
+
+  h3 {
+    color: $color-redish;
+    padding-bottom: 70px;
+  }
+
+  a {
+    background-color: $color-redish;
+    transform: translate(-50%, -50%);
+
+    @include tablet {
+      transform: translate(0%, 290%);
+    }
+  }
+}
+
+.professional {
+  height: 500px;
+  width: 405px;
+  border: 1px solid #07ACE6;
+  box-shadow: 5px 10px 27px #07ACE629;
+  margin: 0 60px;
+
+  @include notebook {
+    margin: 50px 0;
+  }
+
+  @include tablet {
+    height: 280px;
+    width: 340px;
+  }
+
+  h3 {
+    color: #07ACE6;
+    padding-bottom: 55px;
+
+    @include tablet {
+
+    }
+  }
+
+  p {
+    padding-bottom: 60px;
+  }
+
+  a {
+    background-color: #07ACE6;
+    transform: translate(-50%, -75%);
+
+    @include tablet {
+      transform: translate(0%, 325%);
+    }
+  }
+}
+
+.premium {
+  border: 1px solid $color-green;
+  max-height: 460px;
+  width: 370px;
+
+  @include notebook {
+    margin-bottom: 50px;
+  }
+
+  @include tablet {
+    height: 250px;
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    color: $color-green;
+    padding-bottom: 45px;
+
+    @include tablet {
+      padding-bottom: 30px;
+    }
+  }
+
+  p {
+    padding-bottom: 50px;
+
+  }
+
+  a {
+    background-color: $color-green;
+    transform: translate(-50%, -120%);
+
+    @include tablet {
+      transform: translate(0%, 290%);
+    }
+  }
+}

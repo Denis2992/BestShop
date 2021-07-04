@@ -1,0 +1,147 @@
+@import "../settings/buttons";
+@import "../settings/mixins";
+@import "../settings/variables";
+@import "../settings/checkbox";
+
+.contact {
+  background-color: $color-white;
+}
+
+.container_contact {
+  max-width: 1250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+
+
+  @include notebook {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include tablet {
+    margin: 0 25px;
+  }
+
+
+
+}
+
+.contact_data {
+
+
+  h1 {
+    font-family: $font_raleway;
+    font-size: 49px;
+    line-height: 57px;
+    color: $color-black;
+
+    @include tablet {
+      font-size: 40px;
+      line-height: 47px;
+    }
+  }
+
+  p {
+    font-family: $font_opensans;
+    line-height: 22px;
+    color: $color-black;
+    padding: 20px 0 40px 0;
+
+    @include notebook {
+      padding: 30px 30px;
+    }
+
+    @include tablet {
+      padding: 20px 0 40px 0;
+    }
+  }
+
+  .email_phone-number {
+    display: flex;
+    align-items: flex-start;
+
+    @include notebook {
+      padding-bottom: 30px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: $font_opensans;
+      line-height: 22px;
+      color: $color-grey;
+      padding-right: 20px;
+
+      img {
+        padding-right: 10px;
+      }
+    }
+  }
+
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 440px;
+  margin-left: 150px;
+
+  @include notebook {
+    margin-left: 0;
+  }
+
+  .name,
+  .email {
+    font-family: $font_opensans;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $color-primary;
+    padding-bottom: 20px;
+  }
+
+  .email {
+    padding-top: 40px;
+  }
+
+  #email,
+  #name {
+    border: none;
+    border-bottom: 2px solid #00000029;
+
+    &:focus,
+    &:focus {
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+
+  button {
+    @include buttons;
+    padding: 20px 100px;
+    border: none;
+    align-self: flex-end;
+
+    @include tablet {
+      font-size: 13px;
+      line-height: 18px;
+      padding: 15px 70px;
+    }
+  }
+
+}
+
+.checkbox {
+  margin: 30px 0 20px 0;
+
+    span {
+      margin: 5px 15px 0 0;
+  }
+}
